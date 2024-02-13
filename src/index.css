@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login-wrapper{
+  background-image: url('./assets/background2.avif');
+  background-repeat: no-repeat;
+  background-position: 40% 40%;
+  background-size: cover;
+}
+
+.errorPage{
+  background-image: url('./assets/error.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 60%;
+}
+
+/* scroll bar styling */
+.rootLayout::-webkit-scrollbar {
+  width: 7px;
+}
+
+.rootLayout::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.rootLayout::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 5px;
+}
+
+.rootLayout::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+.parent {  
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 2fr 3fr 6fr;
+  grid-auto-rows: 2fr;
+  gap: 0px 10px;
+}
+
+.userParent{
+  display: grid;
+  grid-template-columns: 2fr 4fr 4fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 40px;
+}
+
+.orderGrid{
+  display: grid;
+  grid-template-columns: 1fr 4fr 3fr 3fr 3fr 2fr 2fr 2fr;
+  grid-auto-rows: 2fr;
+  gap: 0px 50px;
+}
+
+/* media query for mobile device */
+@media only screen and (max-width: 600px){
+    .userParent{
+      grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+      grid-auto-rows: 2fr;
+      gap: 0px 15px;
+    }
+
+    .orderGrid{
+      grid-template-columns: 1fr 4fr 3fr 4fr 4fr 2fr 1fr 1fr;
+      grid-auto-rows: 1fr;
+      gap: 0px 100px;
+    }
+
+    .parent {  
+      grid-template-columns: 1fr 5fr 3fr 2fr 3fr 7fr;
+      grid-auto-rows: 2fr;
+      gap: 0px 40px;
+    }
+}
