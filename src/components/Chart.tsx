@@ -1,4 +1,4 @@
-import {useState} from 'react'
+// import {useState} from 'react'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -21,20 +21,35 @@ ChartJS.register(
 );
 
 const Chart = () => {
-  const [chartData, setChartData] = useState<ChartType>({
-    labels: accountData.map((data) => data.month), 
-datasets: [
-  {
-    label: "Sales",
-    data: accountData.map((data) => +data.value),
-    backgroundColor: "#e9eae7",
+//   const [chartData, setChartData] = useState<ChartType>({
+//     labels: accountData.map((data) => data.month), 
+// datasets: [
+//   {
+//     label: "Sales",
+//     data: accountData.map((data) => +data.value),
+//     backgroundColor: "#e9eae7",
+//     borderColor: "rgba(0,0,0,0.86)",
+//     borderWidth: 2,
+//     tension: 0.5,
+//     pointRadius: 0
+//   }
+// ]
+// })
+
+const chartData:ChartType = {
+      labels: accountData.map((data) => data.month), 
+ datasets: [
+   {
+     label: "Sales",
+     data: accountData.map((data) => +data.value),
+     backgroundColor: "#e9eae7",
     borderColor: "rgba(0,0,0,0.86)",
-    borderWidth: 2,
-    tension: 0.5,
-    pointRadius: 0
-  }
-]
-})
+     borderWidth: 2,
+     tension: 0.5,
+     pointRadius: 0
+   }
+ ]
+}
 
   return (
     <section className='border-2y border-red-700y mt-5 min-h-[45vh] lg:min-h-[55vh] w-[100%]'>
