@@ -16,9 +16,9 @@ const TopSells = () => {
         {/* Top sells product in tabular form */}
       <div className='flex flex-col gap-4'>
             {/* table headers */}
-            <div className='flex md:justify-between gap-8 md:gap-0 text-xs text-[rgba(0,0,0,0.5)] lg:p-4 md:p-1 p-1'>
+            <div className='flex md:justify-between gap-6 md:gap-0 text-xs text-[rgba(0,0,0,0.5)] lg:p-4 md:p-1 p-1'>
                 <div>
-                    <TbSquareRounded className='mt-2 md:mt-0 lg:mt-0'/>
+                    <TbSquareRounded className='mt-1 md:mt-0 lg:mt-0'/>
                 </div>
                 <div>
                     {/* <span>PRODUCT NAME</span> */}
@@ -40,7 +40,7 @@ const TopSells = () => {
 
             {/* table data  1*/}
 
-            <div className='flex md:justify-between md:gap-0 gap-6 text-xs text-[rgba(0,0,0,0.5)] lg:p-4 p-1'>
+            <div className='flex md:justify-between md:gap-0 gap-3 text-xs text-[rgba(0,0,0,0.5)] lg:p-4 p-1 border-red-600y border-2y ml-[-0.9rem] md:ml-auto lg:ml-0'>
                 {/* <div>
                     <TbSquareRounded className='mt-2 md:mt-2 lg:mt-0'/>
                 </div> */}
@@ -61,16 +61,16 @@ const TopSells = () => {
                     <span className='font-bold text-black'>Pay-3083 - 23</span>
                 </div>
                 <div>
-                    <span className='font-bold text-black'>12,340 USD</span>
+                    <span className='font-bold text-black pl-3 md:pl-0'>12,340 USD</span>
                 </div>
                 <div className="hidden md:flex">
-                    <span className='border-[0px] border-transparent lg:border-[1px] lg:border-black rounded-2xl px-3 py-1 font-bold text-black'>Delivered</span>
+                    <span className='border-[0px] border-transparent lg:border-[1px] lg:border-black rounded-2xl px-3 py-1 md:py-1 lg:py-2 font-bold text-black'>Delivered</span>
                 </div>
             </div>
 
             {/* table data 2 */}
 
-            <div className='flex md:justify-between md:gap-0 gap-6 text-xs text-[rgba(0,0,0,0.5)] lg:p-4 p-1'>
+            <div className='flex md:justify-between md:gap-0 gap-6 text-xs text-[rgba(0,0,0,0.5)] lg:p-4 p-1 border-red-600y border-2y ml-[-0.9rem] md:ml-auto lg:ml-0'>
                 {/* <div>
                     <TbSquareRounded className='mt-2 md:mt-2 lg:mt-0'/>
                 </div> */}
@@ -91,10 +91,10 @@ const TopSells = () => {
                     <span className='font-bold text-black'>Mer-1249 - 23</span>
                 </div>
                 <div>
-                    <span className='font-bold text-black'>8,625 USD</span>
+                    <span className='font-bold text-black pl-3 md:pl-0'>8,625 USD</span>
                 </div>
                 <div className="hidden md:flex">
-                    <span className='border-[0px] border-transparent lg:border-[1px] lg:border-black rounded-2xl px-3 py-1 font-bold text-black'>Delivered</span>
+                    <span className='border-[0px] border-transparent lg:border-[1px] lg:border-black rounded-2xl px-3 md:px-3 lg:px-3 py-1 md:py-1 lg:py-2 font-bold text-black'>Delivered</span>
                 </div>
             </div>
       </div>

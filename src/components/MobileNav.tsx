@@ -24,7 +24,7 @@ const MobileNav = () => {
 
   return (
     <motion.nav className='fixed top-0 z-10 left-0 flex flex-col gap-4 bg-[#e9eae7] md:w-[45%] w-[100%] p-6 h-[100vh]' variants={fadeInAnimationVariants} initial="initial" viewport={{once:true}} whileInView="animate">
-        <MdOutlineClose className='absolute top-0 text-2xl right-0' onClick={toggleMobileOpen}/>
+        <MdOutlineClose className='absolute top-5 text-2xl right-2 cursor-pointer' onClick={toggleMobileOpen}/>
       <div className='mb-6'>
         <span className='text-xl font-semibold'>Samuel.io</span>
       </div>

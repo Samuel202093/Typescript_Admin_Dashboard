@@ -1,3 +1,5 @@
+import { IconType } from "react-icons";
+
 // type for auth context
 export interface AuthType{
     admin:{} | null,
@@ -12,10 +14,45 @@ export interface Admin{
     password: string
 }
 
-// export interface AuthProps {
-//     children: React.ReactNode
-// }
+export type OrderType = {
+    id: number,
+    name: string,
+    email: string,
+    transcationId: string,
+    date: string,
+    time: string,
+    amount: number,
+    status: string,
+    Icon: IconType
+}
 
+export type ProductType = {
+    id: number,
+    name: string,
+    price: number,
+    quantity: number,
+    img: string,
+    description: string,
+    Icon: IconType
+}
+
+export type PaymentType = {
+    id: number, 
+    Icon: IconType,
+    product_name: string,
+    email: string,
+    amount: number,
+    transcationId: string
+}
+
+export type UserType = {
+    id: number,
+    username: string,
+    email: string,
+    Icon: IconType,
+    Suspend: IconType,
+    Unsuspend: IconType
+}
 
 // type for product context
 export interface ContainerProps {

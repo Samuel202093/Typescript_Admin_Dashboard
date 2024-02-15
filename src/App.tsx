@@ -1,4 +1,3 @@
-// import { useState, useEffect } from 'react'
 import { createBrowserRouter, RouterProvider, createRoutesFromElements,Route } from 'react-router-dom'
 import RootLayout from './components/RootLayout'
 import MyProducts from './pages/MyProducts'
@@ -12,6 +11,7 @@ import AdminSettings from './pages/AdminSettings'
 import Login from './pages/Login'
 import ErrorPage from './pages/ErrorPage'
 import { RequireAuth } from './components/RequireAuth'
+
 
 
 

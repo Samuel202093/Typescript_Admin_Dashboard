@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <nav className='hidden lg:flex flex-col gap-4 bg-[#e9eae7] w-[20%] p-6'>
       <div className='mb-6'>
-        <span className='text-xl font-semibold'>Samuel.io</span>
+        <span className='text-xl font-semibold'>Dashboard.io</span>
       </div>
 
       <div className='flex flex-col gap-5 border-b-[1px] border-[rgba(0,0,0,0.2)] pb-8'>
