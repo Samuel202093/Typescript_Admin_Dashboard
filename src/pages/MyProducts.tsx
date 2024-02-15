@@ -24,7 +24,7 @@ const columns = [
   columnHelper.accessor((row) => row.img, {
     id: "image",
     cell: (info) => (
-      <img src={info.getValue()} className="h-[50px] w-[50px] rounded-lg" />
+      <img src={info.getValue()} className="h-[50px] w-[60px] md:w-[50px] rounded-lg" />
     ),
   }),
 
