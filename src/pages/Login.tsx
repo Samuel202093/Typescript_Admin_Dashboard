@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Slide } from 'react-toastify'
 
 const Login = () => {
-    const {setIsAuth} = useAppContext()
+    const { setIsAuth } = useAppContext()
     const navigate = useNavigate()
 
     const schema: ZodType<LoginType> = z.object({
@@ -38,7 +38,6 @@ const Login = () => {
                     transition: Slide,
                     position: "top-right",
                   });
-                
             }
         })
     }
@@ -66,7 +65,7 @@ const Login = () => {
                         {errors.password && <span className='text-sm text-red-700'>{errors.password.message}</span>}
                     </div>
 
-                    <button className='bg-transparent border-[1px] border-[rgba(0,0,0,0.3)] font-bold rounded-lg flex self-center text-sm px-4 py-2 transition-all delay-[0.3s] hover:bg-[rgba(0,0,0,0.85)] hover:text-[#e9eae7] cursor-pointer '>Submit</button>
+                    <button className='bg-transparent border-[1px] border-[rgba(0,0,0,0.3)] font-bold rounded-lg flex self-center text-sm px-4 py-2 transition-all delay-[0.3s] hover:bg-[rgba(0,0,0,0.85)] hover:text-[#e9eae7] cursor-pointer '>submit</button>
 
                 </form>
             </div>

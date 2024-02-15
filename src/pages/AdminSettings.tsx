@@ -19,7 +19,7 @@ const AdminSettings = () => {
 
     const submitData = (data: AdminSettingsType)=>{
         // console.log("Admin data", data)
-        toast.success(`Admin ${data} changed`,{
+        toast.success(`Admin details changed`,{
             transition: Slide,
             position: "top-right"
         })

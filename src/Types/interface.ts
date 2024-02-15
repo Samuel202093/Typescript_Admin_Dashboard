@@ -71,7 +71,6 @@ export interface AppContextType {
     pendingBalance: number;
     balance: number;
     setBalance: React.Dispatch<React.SetStateAction<number>>;
-    // setBalance: Dispatch<SetStateAction<number>>;
     withdrawValue: number | undefined;
     setIsWithdrawValue: React.Dispatch<React.SetStateAction<number | undefined>>;
     setIsAuth: React.Dispatch<React.SetStateAction<boolean>>;
@@ -80,7 +79,6 @@ export interface AppContextType {
     toggleCloseReport: () => void;
     toggleMobileOpen: () => void;
     handleWithdrawal: () => void;
-    // handleWithdrawal: () =>  React.Dispatch<React.SetStateAction<number>>;
  }
 
 
