@@ -40,7 +40,7 @@ const TopSells = () => {
 
             {/* table data  1*/}
 
-            <div className='flex xmd:justify-between md:justify-between xmd:gap-4 md:gap-0 gap-3 text-xs text-[rgba(0,0,0,0.5)] lg:p-4 p-1 border-red-600y border-2y ml-[-0.9rem] xmd:ml-auto md:ml-auto lg:ml-0'>
+            <div className='flex xmd:justify-between md:justify-between xmd:gap-4 md:gap-0 gap-4 text-xs text-[rgba(0,0,0,0.5)] lg:p-4 p-1 border-red-600y border-2y ml-[-0.9rem] xmd:ml-auto md:ml-auto lg:ml-0'>
                 {/* <div>
                     <TbSquareRounded className='mt-2 md:mt-2 lg:mt-0'/>
                 </div> */}
