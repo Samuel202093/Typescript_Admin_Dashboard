@@ -21,20 +21,6 @@ ChartJS.register(
 );
 
 const Chart = () => {
-//   const [chartData, setChartData] = useState<ChartType>({
-//     labels: accountData.map((data) => data.month), 
-// datasets: [
-//   {
-//     label: "Sales",
-//     data: accountData.map((data) => +data.value),
-//     backgroundColor: "#e9eae7",
-//     borderColor: "rgba(0,0,0,0.86)",
-//     borderWidth: 2,
-//     tension: 0.5,
-//     pointRadius: 0
-//   }
-// ]
-// })
 
 const chartData:ChartType = {
       labels: accountData.map((data) => data.month), 

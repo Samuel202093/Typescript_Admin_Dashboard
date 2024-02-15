@@ -45,9 +45,9 @@ const Login = () => {
 
      
   return (
-    <section className='login-wrapper flex justify-center self-center fixed top-0 left-0 w-[100%] h-[100vh] bg-[rgba(0,0,0,1)]y bg-[#e9eae7]y px-1 md:px-0'>
+    <section className='login-wrapper flex justify-center self-center fixed top-0 left-0 w-[100%] h-[100vh] bg-[rgba(0,0,0,1)]y bg-[#e9eae7]y px-1 md:px-0 xmd:px-0'>
 
-        <div className='flex self-center min-h-[35vh] md:w-[65%] lg:w-[35%] w-[100%] bg-[rgba(0,0,0,0.85)]y bg-[#e9eae7] rounded-lg border-[1px] border-[rgba(0,0,0,0.3)]'>
+        <div className='flex self-center min-h-[35vh] md:w-[65%] xmd:w-[70%] lg:w-[35%] w-[100%] bg-[rgba(0,0,0,0.85)]y bg-[#e9eae7] rounded-lg border-[1px] border-[rgba(0,0,0,0.3)]'>
             <div className='w-[100%] p-5 flex flex-col gap-3 mx-2y md:mx-0y'>
                 <div className='flex justify-center self-center gap-2'>
                     <span className='font-bold text-2xl'>Login</span>

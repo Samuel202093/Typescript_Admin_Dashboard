@@ -51,10 +51,10 @@ const Payments = () => {
     getCoreRowModel: getCoreRowModel(),
   });
   return (
-    <div className="flex self-center min-h-[20vh] w-[100%] mt-5 bg-[#e9eae7]y rounded-lg border-2y border-red-700y overflow-x-scroll md:overflow-x-hidden">
+    <div className="flex self-center min-h-[20vh] w-[100%] mt-5 bg-[#e9eae7]y rounded-lg border-2y border-red-700y overflow-x-scroll md:overflow-x-hidden xmd:overflow-x-hidden">
       {/* <MdOutlineClose className='absolute right-[25%] text-2xl cursor-pointer'/> */}
 
-      <div className="tableWrapper flex w-[100%] mt-5 flex-col overflow-x-scroll md:overflow-x-hidden gap-5 border-2y border-red-700y md:p-8 p-1">
+      <div className="tableWrapper flex w-[100%] mt-5 flex-col overflow-x-scroll md:overflow-x-hidden gap-5 border-2y border-red-700y md:p-8 xmd:p-8 p-1">
         <table className="my-auto bordery text-sm">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -82,7 +82,7 @@ const Payments = () => {
             {table.getRowModel().rows.map((row) => (
               <tr key={row.id} className="border-b">
                 {row.getVisibleCells().map((cell) => (
-                  <td key={cell.id} className="px-1 md:px-4 pt-[14px] pb-[18px]">
+                  <td key={cell.id} className="px-1 md:px-4 xmd:px-4 pt-[14px] pb-[18px]">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}

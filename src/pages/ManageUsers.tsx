@@ -61,7 +61,7 @@ const ManageUsers = () => {
     <div className="flex self-center min-h-[30vh] w-[100%] mt-5 bg-[#e9eae7]y rounded-lgy overflow-y-scrolly">
       {/* <MdOutlineClose className='absolute right-[26%] text-2xl cursor-pointer'/> */}
 
-      <div className="tableWrapper flex w-[100%] mt-3 flex-col gap-6 border-2y border-red-700y md:p-5 p-2 overflow-x-scroll md:overflow-x-hidden">
+      <div className="tableWrapper flex w-[100%] mt-3 flex-col gap-6 border-2y border-red-700y md:p-5 xmd:p-5 p-2 overflow-x-scroll md:overflow-x-hidden xmd:overflow-x-hidden">
         <table className="my-auto bordery text-sm overflow-x-scrolly">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (

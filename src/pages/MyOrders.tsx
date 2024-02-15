@@ -59,7 +59,7 @@ const MyOrders = () => {
     <div className="flex self-center mt-5 min-h-[40vh] w-[100%] bg-[#e9eae7]y border-2y border-blacky rounded-lgy lg:overflow-x-hidden overflow-x-scroll">
       {/* <MdOutlineClose className='absolute right-[20%] text-2xl cursor-pointer'/> */}
 
-      <div className="tableWrapper flex w-[100%] mt-5 flex-col overflow-x-scroll md:overflow-x-hidden gap-6 border-2y border-red-700y md:p-5 p-1">
+      <div className="tableWrapper flex w-[100%] mt-5 flex-col overflow-x-scroll md:overflow-x-hidden xmd:overflow-x-hidden gap-6 border-2y border-red-700y md:p-5 xmd:p-5 p-1">
 
         <table className="my-auto bordery text-sm">
           <thead>

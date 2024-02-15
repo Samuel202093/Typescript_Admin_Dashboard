@@ -55,10 +55,10 @@ const MyProducts = () => {
   });
 
   return (
-    <div className="flex self-center min-h-[100vh] mt-5 w-[100%] md:p-5 p-2 border-2y border-blacky md:overflow-x-hidden overflow-x-scroll">
+    <div className="flex self-center min-h-[100vh] mt-5 w-[100%] md:p-5 xmd:p-5 p-2 border-2y border-blacky md:overflow-x-hidden xmd:overflow-x-hidden overflow-x-scroll">
       {/* <MdOutlineClose className='absolute right-[26%] text-2xl cursor-pointer'/> */}
 
-      <div className="tableWrapper flex flex-col gap-6 w-[100%] overflow-x-scroll md:overflow-x-hidden md:p-5 p-1 mt-5">
+      <div className="tableWrapper flex flex-col gap-6 w-[100%] overflow-x-scroll md:overflow-x-hidden xmd:overflow-x-hidden md:p-5 xmd:p-5 p-1 mt-5">
         <table className="my-auto bordery text-sm">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (

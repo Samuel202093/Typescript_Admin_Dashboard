@@ -13,13 +13,13 @@ const AmountWrapper = () => {
   }
 
   return (
-    <section className='flex flex-col gap-4 border-[1px] border-[rgba(0,0,0,0.2)] rounded-lg lg:p-5 md:p-2'>
+    <section className='flex flex-col gap-4 border-[1px] border-[rgba(0,0,0,0.2)] rounded-lg lg:p-5 md:p-2 xmd:p-2 '>
       <div className='flex flex-col gap-1'>
         <span className='text-sm font-semibold'>Enter Amount</span>
         <div className='flex flex-row justify-between'>
             {/* <span className='text-xl font-bold'>$234,950.00</span> */}
             <input type="text" placeholder='$234,950.00' className='pl-2y text-base lg:text-xl cursor-pointer border-none w-[100%] lg:w-[100%] focus:outline-none placeholder:font-bold placeholder:text-black border-2y border-green-700y' name="withdrawValue" onChange={handleChange}/>
-            <span className='hidden md:hidden lg:flex text-xs mt-2 gap-2 text-red-900y border-2y border-black'>USD <MdKeyboardArrowDown className='text-xl font-semibold mt-[-0.15rem]'/></span>
+            <span className='hidden xmd:hidden md:hidden lg:flex text-xs mt-2 gap-2 text-red-900y border-2y border-black'>USD <MdKeyboardArrowDown className='text-xl font-semibold mt-[-0.15rem]'/></span>
         </div>
       </div>
 
