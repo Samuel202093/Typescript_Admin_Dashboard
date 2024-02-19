@@ -9,8 +9,16 @@ import {
   flexRender,
 } from "@tanstack/react-table";
 import { UserType } from "../Types/interface";
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+import { Slide } from 'react-toastify'
 
-const columnHelper = createColumnHelper<UserType>();
+const ManageUsers = () => {
+  const [data] = useState(() => [...users]);
+  const [clickSuspend, setClickSuspend] = useState<number | null>(null)
+  const [suspendColor, setSuspendColor] = useState<string>('black')
+
+  const columnHelper = createColumnHelper<UserType>();
 const columns = [
   columnHelper.accessor("Icon", {
     header: () => "icon",
@@ -31,27 +39,54 @@ const columns = [
   }),
   columnHelper.accessor("Suspend", {
     header: () => "suspend",
-    cell: () => (
+    cell: ({row}:any) => (
       <>
         {" "}
-        <RiUserUnfollowFill className="text-xl cursor-pointer text-red-800" />
+        <RiUserUnfollowFill className="text-xl cursor-pointer text-red-800y" style={{color:clickSuspend === row.original.id ? suspendColor : ''}} onClick={()=> handleSuspend(row.original.id)}/>
       </>
     ),
   }),
   columnHelper.accessor("Unsuspend", {
     header: () => "unsuspend",
-    cell: () => (
+    cell: ({row}:any) => (
       <>
         {" "}
-        <RiUserFollowFill className="text-xl cursor-pointer text-green-800" />
+        <RiUserFollowFill className="text-xl cursor-pointer text-green-500" onClick={()=> handleUnSuspend(row.original.id)} />
       </>
     ),
   }),
 ];
 
-const ManageUsers = () => {
-  const [data] = useState(() => [...users]);
+const handleSuspend = (id:number)=>{
+  users.find((x):any=>{
+    if (x.id === id) {
+      setClickSuspend(id)
+      setSuspendColor('red')
+      toast.success(`${x.username} has been suspended`,{
+        transition: Slide,
+        position: "top-right"
+    })
+    }
+  })
+}
 
+const handleUnSuspend = (id:number)=>{
+  users.find((x):any=>{
+    if (x.id === id) {
+      setClickSuspend(id)
+      setSuspendColor('black')
+      toast.success(`${x.username} has been unsuspended`,{
+        transition: Slide,
+        position: "top-right"
+    })
+    }
+  })
+}
+
+
+
+
+  
   const table = useReactTable({
     data,
     columns,
